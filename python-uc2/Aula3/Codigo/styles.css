@@ -1,0 +1,48 @@
+body{
+    font-family: sans-serif;
+    font-size: 20px;
+    color: saddlebrown;
+}
+
+header{
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color:darkgoldenrod;
+
+    border-left-style:solid;
+    border-left-width: 3px;
+    border-left-color: darkgoldenrod;
+
+    border-right-style: solid;
+    border-right-width: 3px;
+    border-right-color: darkgoldenrod;
+}
+
+
+h1{
+    color: darkgoldenrod;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+    padding-left: 250px;
+    padding-top: 30px;
+}
+
+main{
+    border-left-style:solid;
+    border-left-width: 3px;
+    border-left-color: darkgoldenrod;
+    padding-left: 10px;
+}
+
+footer{
+    margin-top: 600px;
+    border-top: double 3px darkgoldenrod;
+    padding-left: 250px;
+}
+
+h2{
+    font-family: Georgia, serif;
+}
+p{
+    font-family: Georgia, serif;
+}
