@@ -1,131 +1,174 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
+  <head>
     <title>Cadastro - [MUDAR]</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="[MUDAR]">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="[MUDAR]" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
 
     <style>
-        .adicionar_borda {
-            border-width: 1px;
-            border-style: solid;
-            border-color: black;
-        }
+      .adicionar_borda {
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+      }
     </style>
-</head>
+  </head>
 
-<body class="bg-secondary bg-light">
-
+  <body class="bg-secondary bg-light">
     <!-- DIV - Principal -->
     <div id="div_principal" class="container adicionar_borda bg-light my-4 p-3">
-        
-        <!-- Header da Página -->
-        <header class="adicionar_borda p-3 mb-3">
-            <div class="row mb-3">
-                <div class="col-12">
-                    <h4>Logo / Título</h4>
-                </div>
+      <!-- Header da Página -->
+      <header class="adicionar_borda p-3 mb-3">
+        <div class="row mb-3">
+          <div class="col-12">
+            <h4>Logo / Título</h4>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-9">
+            <span>Menu principal</span>
+          </div>
+          <div class="col-3 text-end">
+            <span>Login/Logout</span> | <span>Cadastrar</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main da Página -->
+      <main class="adicionar_borda p-3 mb-3">
+        <h2 class="mb-3">Formulário de Cadastro</h2>
+
+        <form action="cadastro/" method="get" target="_blank">
+          <!-- Nome Completo -->
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="addon-nome">Nome*</span>
+            <input
+              type="text"
+              class="form-control"
+              name="nome"
+              required
+              placeholder="Insira seu nome"
+              aria-label="Nome"
+              aria-describedby="addon-nome"
+            />
+          </div>
+
+          <!-- Email de login -->
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="addon-email"
+              ><i class="bi bi-envelope"> Email*</i></span
+            >
+            <!-- <span class="input-group-text" id="addon-email">@</span> -->
+            <input
+              type="email"
+              class="form-control"
+              name="email"
+              placeholder="Email"
+              aria-label="Email"
+              aria-describedby="addon-email"
+            />
+          </div>
+
+          <!-- Senha -->
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="addon-password">Senha*</span>
+            <input
+              type="password"
+              class="form-control"
+              id="senha"
+              name="senha"
+              required
+              placeholder="Sua senha"
+              title="Informe sua senha"
+              aria-describedby="addon-password"
+            />
+          </div>
+
+          <!-- Confirmar Senha -->
+          <div class="input-group mb-3">
+            <!-- <label for="confirm_senha" class="form-label input-group-text" id="addon-password">Confirmar Senha</label> -->
+            <input
+              type="password"
+              class="form-control"
+              id="confirm_senha"
+              name="confirm_senha"
+              required
+              placeholder="Confirme sua senha"
+              title="Confirme sua senha"
+            />
+          </div>
+
+          <!-- Outros campos (espaços reservados) -->
+          <!-- CPF -->
+          <!-- CEP -->
+          <!-- Endereço -->
+          <!-- Complemento -->
+          <!-- Bairro -->
+          <!-- Cidade -->
+          <!-- Estado -->
+
+          <div>
+            <div class="container text-center row aligh-items-center">
+              <button type="submit" class="form-control btn btn-primary mt-3">
+                Cadastrar
+              </button>
             </div>
 
-            <div class="row align-items-center">
-                <div class="col-9">
-                    <span>Menu principal</span>
-                </div>
-                <div class="col-3 text-end">
-                    <span>Login/Logout</span> | <span>Cadastrar</span>
-                </div>
+            <div class="container text-center row aligh-items-center">
+              <button type="reset" class="btn btn-primary mt-3">Limpar</button>
             </div>
-        </header>
+          </div>
+        </form>
+      </main>
 
-        <!-- Main da Página -->
-        <main class="adicionar_borda p-3 mb-3">
-            <h2 class="mb-3">Formulário de Cadastro</h2>
-            
-            <form action="cadastro/" method="get" target="_blank">
+      <!-- Footer da Página -->
+      <footer class="adicionar_borda p-3">
+        <div class="row">
+          <div class="col-4">
+            <span>Menu Secundário</span>
+          </div>
 
-                <!-- Nome Completo -->
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="addon-nome">Nome*</span>
-                    <input type="text" class="form-control" name="nome" required placeholder="Insira seu nome" aria-label="Nome" aria-describedby="addon-nome">
-                </div>
+          <div class="col-5">
+            <span>Contato</span><br />
+            <span>Copyright &copy; 2026</span>
+          </div>
 
-                <!-- Email de login -->
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="addon-email"><i class="bi bi-envelope"> Email*</i></span>
-                    <!-- <span class="input-group-text" id="addon-email">@</span> -->
-                    <input type="email" class="form-control" name="email" placeholder="Email" aria-label="Email" aria-describedby="addon-email">
-                </div>
-
-                <!-- Senha -->
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="addon-password">Senha*</span>
-                    <input type="password" class="form-control" id="senha" name="senha" required placeholder="Sua senha" title="Informe sua senha" aria-describedby="addon-password">
-                </div>
-
-                <!-- Confirmar Senha -->
-                <div class="input-group mb-3">
-                    <!-- <label for="confirm_senha" class="form-label input-group-text" id="addon-password">Confirmar Senha</label> -->
-                    <input type="password" class="form-control" id="confirm_senha" name="confirm_senha" required placeholder="Confirme sua senha" title="Confirme sua senha">
-                </div>
-
-                <!-- Outros campos (espaços reservados) -->
-                <!-- CPF -->
-                <!-- CEP -->
-                <!-- Endereço -->
-                <!-- Complemento -->
-                <!-- Bairro -->
-                <!-- Cidade -->
-                <!-- Estado -->
-                
-
-                    <div>
-
-                        <div class="container text-center row aligh-items-center">
-                            <button type="submit" class="form-control btn btn-primary mt-3 ">Cadastrar</button>
-                        </div>
-
-                        <div class="container text-center row aligh-items-center">
-                            <button type="reset" class="btn btn-primary mt-3 ">Limpar</button>
-                        </div>
-                    </div>
-
-            </form>
-        </main>
-
-        <!-- Footer da Página -->
-        <footer class="adicionar_borda p-3">
-            <div class="row">
-                <div class="col-4">
-                    <span>Menu Secundário</span>
-                </div>
-
-                <div class="col-5">
-                    <span>Contato</span><br>
-                    <span>Copyright &copy; 2026</span>
-                </div>
-
-                <div class="col-3">
-                    <a href="https://github.com/Eipetricktw" target="_blank" title="Acesse nosso GitHub" class="text-decoration-none">
-                        <i class="bi bi-github"></i> GitHub
-                    </a>
-                </div>
-            </div>
-        </footer>
-
-    </div> 
+          <div class="col-3">
+            <a
+              href="https://github.com/Eipetricktw"
+              target="_blank"
+              title="Acesse nosso GitHub"
+              class="text-decoration-none"
+            >
+              <i class="bi bi-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
     <!-- Final da Div Principal -->
 
     <!-- Bootstrap JS e dependências -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
