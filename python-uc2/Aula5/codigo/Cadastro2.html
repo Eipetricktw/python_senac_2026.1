@@ -49,7 +49,7 @@
             </div>
 
             <div class="row mt-2">
-                <div class="col-9">
+                <div class="col- 9">
                     Menu principal
                 </div>
                 <div class="col-3 text-end">
@@ -60,29 +60,70 @@
                 </div>
             </div>
 
-            <!-- Cmç da Navbar -->
-            <nav class="navbar navbar-dark bg-dark">                    
-                    <div class="container-fluid">
-                            <a class="navbar-brand" href="#">Navbar w/ text</a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarText">
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                    <a class="nav-link" href="#">Loja</a>
-                                    </li>
-                                    <li class="nav-item">
-                                    <a class="nav-link" href="#">Blog</a>
-                                    </li>
-                                </ul>
+            <!-- Navbar - Inicio -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="fa-brands fa-rebel"></i>
+            </a>
+            <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link active" 
+                            href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" 
+                            href="produtos.html">
+                            Loja
+                        </a>
+                    </li>
 
-                    </div>
-                </nav>
-            <!-- Final Navbar -->
+                    <li class="nav-item">
+                        <a class="nav-link" 
+                            href="blog.html">
+                            Blog
+                        </a>
+                    </li>
+
+                </ul>
+
+                <form class="d-flex">
+
+                    <a href="auth/login"
+                        class="btn btn-sm btn-success me-1">
+                        <i class="fa-solid fa-right-to-bracket"></i> Login 
+                    </a>
+                    <a href="auth/logout"
+                        class="btn btn-sm btn-warning me-1">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Logout 
+                    </a>
+                    <a href="cadastro-bs.html"
+                        class="btn btn-sm btn-primary me-1"
+                        title="Realizar o cadastro">
+                    <i class="fa-solid fa-user-plus"></i>                    
+                    </a>
+                </form>
+            </div>
+        </div>
+        </nav>
+        <!-- Navbar - Final -->
         </header>
 
         <!-- Main da pagina -->
