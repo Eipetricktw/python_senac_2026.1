@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>[MUDAR]</title>
+    <title>Pet-Pages Site Principal</title>
     <meta name="description" content="[MUDAR]" />
 
     <!-- Bootstrap CSS -->
@@ -35,8 +35,8 @@
   </head>
   <!-- Final do Head-->
 
-  <!-- Inicio do Body -->
-  <body class="bg-light">
+  <!-- Inicio do Body (Modificado para Flexbox e altura mínima de 100vh) -->
+  <body class="bg-light d-flex flex-column min-vh-100">
     <!--
         Header da pagina 
         [-] Logotipo 
@@ -48,7 +48,7 @@
       <!-- Navbar - Inicio -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="Modelo.html">
             <i class="fa-brands fa-wolf-pack-battalion"></i>
           </a>
           <button
@@ -65,20 +65,20 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" href="index.html"> Home </a>
+                <a class="nav-link active" href="produtos-lista.html"> Produtos </a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="produtos.html"> Loja </a>
+                <a class="nav-link" href="promocoes.html"> Promoções </a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="blog.html"> Blog </a>
+                <a class="nav-link" href="sobre.html"> Sobre </a>
               </li>
             </ul>
 
             <form class="d-flex">
-              <a href="auth/login" class="btn btn-sm btn-success me-1">
+              <a href="login.html" class="btn btn-sm btn-success me-1">
                 <i class="fa-solid fa-right-to-bracket"></i> Login
               </a>
               <a href="auth/logout" class="btn btn-sm btn-warning me-1">
@@ -98,62 +98,21 @@
       <!-- Navbar - Final -->
     </header>
 
-  <!-- Main da pagina -->
-<main class="bg-light py-4">
-  <div class="container">
-    <div class="row g-4"> <!-- "g-4" adiciona um espaçamento legal entre as colunas/cards -->
-      
-      <!-- Coluna 1 -->
-      <div class="col-md-4 col-sm-6">
-        <div class="card h-100">
-          <img
-            src="https://dummyimage.com/300x300/000/fff.png&text=Card+1"
-            class="card-img-top"
-            alt="Imagem de exemplo do card 1"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Título do Card 1</h5>
-            <p class="card-text">Descrição ou conteúdo resumido.</p>
-            <a href="#" class="btn btn-primary">Ação</a>
+    <!-- Main da pagina -->
+    <main class="bg-light py-4 flex-fill">
+      <div class="container">
+        <div class="row g-4"> 
+          
+          <!-- Coluna 1 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="">
+             <h1>Sobre Nós</h1>
+            </div>
           </div>
+
         </div>
       </div>
-
-      <!-- Coluna 2 -->
-      <div class="col-md-4 col-sm-6">
-        <div class="card h-100">
-          <img
-            src="https://dummyimage.com/300x300/000/fff.png&text=Card+2"
-            class="card-img-top"
-            alt="Imagem de exemplo do card 2"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Título do Card 2</h5>
-            <p class="card-text">Descrição ou conteúdo resumido.</p>
-            <a href="#" class="btn btn-primary">Ação</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Coluna 3 -->
-      <div class="col-md-4 col-sm-6">
-        <div class="card h-100">
-          <img
-            src="https://dummyimage.com/300x300/000/fff.png&text=Card+3"
-            class="card-img-top"
-            alt="Imagem de exemplo do card 3"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Título do Card 3</h5>
-            <p class="card-text">Descrição ou conteúdo resumido.</p>
-            <a href="#" class="btn btn-primary">Ação</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</main>
+    </main>
 
     <!--
         Footer da pagina 
@@ -162,18 +121,18 @@
         [-] Copyright do site
         [-] Redes Sociais
     -->
-    <footer class="bg-dark text-light">
+    <footer class="bg-dark text-light mt-auto">
       <div class="container py-4">
         <div class="row">
           <div class="col-md-2">
             <p class="fw-bold">Links Rápidos:</p>
 
             <nav class="nav flex-column">
-              <a class="nav-link text-white py-1 ps-0" href="#"> Quem somos </a>
-              <a class="nav-link text-white py-1 ps-0" href="#"> Fale Conosco </a>
-              <a class="nav-link text-white py-1 ps-0" href="#"> Trabalhe conosco </a>
-              <a class="nav-link text-white py-1 ps-0" href="#"> Meu Perfil </a>
-              <a class="nav-link text-white py-1 ps-0" href="#"> Blog </a>
+              <a class="nav-link text-white py-1 ps-0" href="sobre.html"> Quem somos </a>
+              <a class="nav-link text-white py-1 ps-0" href="contato.html"> Fale Conosco </a>
+              <a class="nav-link text-white py-1 ps-0" href="trabalhe_conosco-bs.html"> Trabalhe conosco </a>
+              <a class="nav-link text-white py-1 ps-0" href="meu_perfil.html"> Meu Perfil </a>
+              <a class="nav-link text-white py-1 ps-0" href="blog.html"> Blog </a>
             </nav>
           </div>
 
@@ -181,16 +140,16 @@
             <p class="fw-bold">Contatos:</p>
 
             <a class="nav-link text-white py-1 ps-0" href="tel:24988317476"> (24) 98831-7476 </a>
-            <a class="nav-link text-white py-1 ps-0" href="mailto:djfhdufshdf@gmail.com">
-              djfhdufshdf@gmail.com
+            <a class="nav-link text-white py-1 ps-0" href="mailto:Eipetricktw@gmail.com">
+              Eipetricktw@gmail.com
             </a>
-            <a class="nav-link text-white py-1 ps-0" href="#"> Suporte </a>
+            <a class="nav-link text-white py-1 ps-0" href="suporte.html"> Suporte </a>
           </div>
 
           <!-- Redes Sociais -->
           <div class="col-md-7 text-end py-3">
             <a
-              href="https://github.com/luisrodrigonet/"
+              href="https://github.com/Eipetricktw"
               target="_blank"
               title="Acesse nosso GitHub"
               class="btn btn-sm btn-outline-light"
