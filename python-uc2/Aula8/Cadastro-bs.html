@@ -30,7 +30,7 @@
 <!-- Final do Head-->
 
 <!-- Inicio do Body -->
-<body class="bg-dark">
+<body class="bg-light">
     <!-- 
         DIV - Principal
         Area principal do site contem o 
@@ -38,30 +38,17 @@
             - Main 
             - Footer
     -->
-    <div id="div_principal" class="container adicionar_borda bg-light my-4 p-4">
+    <!-- <div id="div_principal" class="container adicionar_borda bg-light my-4 p-4"> -->
         
         <!-- Header da pagina -->
-        <header class="adicionar_borda p-3 mb-3">
-            <div class="row">
-                <div class="col-12">
-                    
-                </div>
-            </div>
-
-            <div class="row mt-2">
-                <div class="col- 9">
-                   
-                </div>
-
-            </div>
-
-            <!-- Navbar - Inicio -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       <header>
+      <!-- Navbar - Inicio -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="Modelo.html">
-                <i class="fa-brands fa-wolf-pack-battalion"></i>
-            </a>
-            <button
+          <a class="navbar-brand" href="Modelo.html">
+            <i class="fa-brands fa-wolf-pack-battalion"></i>
+          </a>
+          <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -69,217 +56,322 @@
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
-            >
+          >
             <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    
-                    <li class="nav-item">
-                        <a class="nav-link active" 
-                            href="index.html">
-                            Home
-                        </a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" 
-                            href="produtos.html">
-                            Loja
-                        </a>
-                    </li>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="produtos-lista.html"> Produtos </a>
+              </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" 
-                            href="blog.html">
-                            Blog
-                        </a>
-                    </li>
+              <li class="nav-item">
+                <a class="nav-link" href="promocoes.html"> Promoções </a>
+              </li>
 
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre.html"> Sobre </a>
+              </li>
+            </ul>
 
-                <form class="d-flex">
-
-                    <a href="auth/login"
-                        class="btn btn-sm btn-success me-1">
-                        <i class="fa-solid fa-right-to-bracket"></i> Login 
-                    </a>
-                    <a href="auth/logout"
-                        class="btn btn-sm btn-warning me-1">
-                        <i class="fa-solid fa-right-from-bracket"></i>
-                        Logout 
-                    </a>
-                    <a href="cadastro-bs.html"
-                        class="btn btn-sm btn-primary me-1"
-                        title="Realizar o cadastro">
-                    <i class="fa-solid fa-user-plus"></i>                    
-                    </a>
-                </form>
-            </div>
+            <form class="d-flex">
+              <a href="login.html" class="btn btn-sm btn-success me-1">
+                <i class="fa-solid fa-right-to-bracket"></i> Login
+              </a>
+              <a href="auth/logout" class="btn btn-sm btn-warning me-1">
+                <i class="fa-solid fa-right-from-bracket"></i> Logout
+              </a>
+              <a
+                href="cadastro-bs.html"
+                class="btn btn-sm btn-primary me-1"
+                title="Realizar o cadastro"
+              >
+                <i class="fa-solid fa-user-plus"></i>
+              </a>
+            </form>
+          </div>
         </div>
-        </nav>
-        <!-- Navbar - Final -->
-        </header>
+      </nav>
+      <!-- Navbar - Final -->
+    </header>
 
         <!-- Main da pagina -->
-        <main class="adicionar_borda p-3 mb-3">
-            <!-- Formulário de Cadastro -->
-            <form action="cadastro/" method="get" target="_blank">
+     <main class="bg-light py-4">
+    <div class="container">
+        <h1 class="text-center mb-4">Formulário de Cadastro</h1>
+        <p class="text-center mb-4">Preencha os campos abaixo para criar sua conta.</p>
 
-                <!-- Nome Completo -->
-                 <div class="input-group mb-3">
-            <span class="input-group-text" id="addon-nome">Nome*</span>
-            <input
-              type="text"
-              class="form-control"
-              name="nome"
-              required
-              placeholder="Insira seu nome"
-              aria-label="Nome"
-              aria-describedby="addon-nome"
-            />
-          </div>
+        <!-- Formulário de Cadastro -->
+        <form action="cadastro/" method="get" target="_blank">
 
-                <!-- E-mail de login -->
-               <div class="input-group mb-3">
-            <span class="input-group-text" id="addon-email"
-              ><i class="fa-light fa-at"> Email</i></span
-            >
-            <!-- <span class="input-group-text" id="addon-email">@</span> -->
-            <input
-              type="email"
-              class="form-control"
-              name="email"
-              placeholder="Email"
-              aria-label="Email"
-              aria-describedby="addon-email"
-            />
-          </div>
+            <!-- Nome Completo -->
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="addon-nome">Nome*</span>
+                <input
+                    type="text"
+                    class="form-control"
+                    name="nome"
+                    required
+                    placeholder="Insira seu nome"
+                    aria-label="Nome"
+                    aria-describedby="addon-nome"
+                />
+            </div>
 
-                <!-- Senha e Confirmar Senha -->
-                <div class="row mb-3"> 
-                    <div class="col-md-6">
-                        <label class="form-label" for="senha">Senha:</label>
-                        <input class="form-control" type="password" id="senha" name="senha" 
-                            required minlength="6" placeholder="Informe uma senha">            
-                    </div>
+            <!-- E-mail de login -->
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="addon-email">
+                    <i class="fa-light fa-at"></i> Email
+                </span>
+                <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    placeholder="Email"
+                    aria-label="Email"
+                    aria-describedby="addon-email"
+                />
+            </div>
 
-                    <div class="col-md-6">
-                        <label class="form-label" for="confirm_senha">Confirmar:</label>
-                        <input class="form-control" type="password" id="confirm_senha" name="confirm_senha" 
-                            required minlength="6" placeholder="Confirme a senha">
-                    </div>
+            <!-- Senha e Confirmar Senha -->
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label class="form-label" for="senha">Senha:</label>
+                    <input 
+                        class="form-control" 
+                        type="password" 
+                        id="senha" 
+                        name="senha" 
+                        required 
+                        minlength="6" 
+                        placeholder="Informe uma senha"
+                    />
                 </div>
 
-                <!-- Data de Nascimento e Sexo -->
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label class="form-label" for="nascimento">Data Nascimento:</label>
-                        <input class="form-control" type="date" id="nascimento" name="nascimento">
-                    </div>
-                    <div class="col-md-6">
-                        <label class="form-label" for="opcao">Sexo:</label>
-                        <select class="form-select" id="opcao" aria-label="Default select example">
-                            <option selected>Abrir o menu</option>
-                            <option value="1">Masculino</option>
-                            <option value="2">Feminino</option>
-                            <option value="3">Outro</option>
-                        </select>
-                    </div>
-                </div>
-
-                <!-- CPF -->
-                <div class="mb-3">
-                    <label class="form-label" for="cpf">CPF:</label>
-                    <input class="form-control" type="text" id="cpf" name="cpf" 
-                        placeholder="000.000.000-00" 
-                        pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" 
-                        title="Formato: 000.000.000-00" required>             
-                </div>
-
-
-                <!-- Estado -->
-                            <div class="mb-3">
-                    <label class="form-label" for="opcao">Estado:</label>
-                    <select class="form-select" id="opcao" aria-label="Default select example">
-                        <option selected>Abrir o menu</option>
-                        <option value="AC">Acre</option>
-                        <option value="AL">Alagoas</option>
-                        <option value="AP">Amapá</option>
-                        <option value="AM">Amazonas</option>
-                        <option value="BA">Bahia</option>
-                        <option value="CE">Ceará</option>
-                        <option value="DF">Distrito Federal</option>
-                        <option value="ES">Espírito Santo</option>
-                        <option value="GO">Goiás</option>
-                        <option value="MA">Maranhão</option>
-                        <option value="MT">Mato Grosso</option>
-                        <option value="MS">Mato Grosso do Sul</option>
-                        <option value="MG">Minas Gerais</option>
-                        <option value="PA">Pará</option>
-                        <option value="PB">Paraíba</option>
-                        <option value="PR">Paraná</option>
-                        <option value="PE">Pernambuco</option>
-                        <option value="PI">Piauí</option>
-                        <option value="RJ">Rio de Janeiro</option>
-                        <option value="RN">Rio Grande do Norte</option>
-                        <option value="RS">Rio Grande do Sul</option>
-                        <option value="RO">Rondônia</option>
-                        <option value="RR">Roraima</option>
-                        <option value="SC">Santa Catarina</option>
-                        <option value="SP">São Paulo</option>
-                        <option value="SE">Sergipe</option>
-                        <option value="TO">Tocantins</option>
-                    </select>
-                </div>
-
-
-                <!-- Telefone -->
-                <div class="mb-3">
-                    <label class="form-label" for="telefone">Telefone*:</label>
-                    <input class="form-control" type="tel" id="telefone" name="telefone" 
-                        required placeholder="(XX) XXXXX-XXXX"
-                        pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}"
-                        title="Formato: (XX) XXXXX-XXXX">
-                </div>
-
-                <!-- Botões -->
-                <div class="row mt-4">
-                    <div class="col-6">
-                        <button type="submit" class="form-control btn btn-outline-primary">
-                            Enviar
-                        </button>
-                    </div>
-                    <div class="col-6">
-                        <button type="reset" class="form-control btn btn-outline-warning">
-                            Limpar
-                        </button>
-                    </div>
-                </div>
-
-            </form>
-            <!-- Final do Form -->
-        </main>
-
-        <!-- Footer da pagina -->
-        <footer class="adicionar_borda p-3">
-            <div class="row align-items-center">
-                <div class="col-4">
-                    Menu Secundário
-                </div>
-
-                <div class="col-5">
-                    Contato <br>
-                    Copyright &copy; 2026
-                </div>
-
-                <div class="col-3 text-end">
-                    <a href="https://github.com/Eipetricktw" target="_blank" title="Acesse nosso GitHub" class="fs-5 text-dark">
-                           <i class="fa-brands fa-github"></i>Github</a>
+                <div class="col-md-6">
+                    <label class="form-label" for="confirm_senha">Confirmar:</label>
+                    <input 
+                        class="form-control" 
+                        type="password" 
+                        id="confirm_senha" 
+                        name="confirm_senha" 
+                        required 
+                        minlength="6" 
+                        placeholder="Confirme a senha"
+                    />
                 </div>
             </div>
-        </footer>
-    </div> 
+
+            <!-- Data de Nascimento e Sexo -->
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label class="form-label" for="nascimento">Data Nascimento:</label>
+                    <input class="form-control" type="date" id="nascimento" name="nascimento" />
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="sexo">Sexo:</label>
+                    <select class="form-select" id="sexo" name="sexo" aria-label="Seleção de sexo">
+                        <option selected disabled value="">Selecione uma opção</option>
+                        <option value="1">Masculino</option>
+                        <option value="2">Feminino</option>
+                        <option value="3">Outro</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- CPF -->
+            <div class="mb-3">
+                <label class="form-label" for="cpf">CPF:</label>
+                <input 
+                    class="form-control" 
+                    type="text" 
+                    id="cpf" 
+                    name="cpf" 
+                    placeholder="000.000.000-00" 
+                    pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" 
+                    title="Formato: 000.000.000-00" 
+                    required 
+                />
+            </div>
+
+            <!-- Estado -->
+            <div class="mb-3">
+                <label class="form-label" for="estado">Estado:</label>
+                <select class="form-select" id="estado" name="estado" aria-label="Seleção de estado">
+                    <option selected disabled value="">Selecione o estado</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
+
+            <!-- Telefone -->
+            <div class="mb-3">
+                <label class="form-label" for="telefone">Telefone*:</label>
+                <input 
+                    class="form-control" 
+                    type="tel" 
+                    id="telefone" 
+                    name="telefone" 
+                    required 
+                    placeholder="(XX) XXXXX-XXXX"
+                    pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}"
+                    title="Formato: (XX) XXXXX-XXXX"
+                />
+            </div>
+
+            <!-- Botões -->
+            <div class="row mt-4">
+                <div class="col-6">
+                    <button type="submit" class="w-100 btn btn-outline-primary">
+                        Enviar
+                    </button>
+                </div>
+                <div class="col-6">
+                    <button type="reset" class="w-100 btn btn-outline-warning">
+                        Limpar
+                    </button>
+                </div>
+            </div>
+
+        </form>
+        <!-- Final do Form -->
+    </div>
+</main>
+        <!-- Footer da pagina -->
+          <footer class="bg-dark text-light mt-auto">
+        <div class="container py-4">
+          <div class="row">
+            <div class="col-md-2">
+              <p class="fw-bold">Links Rápidos:</p>
+
+              <nav class="nav flex-column align-items-start">
+                <a class="nav-link text-white py-1 ps-0" href="sobre.html"> Quem somos </a>
+                <a class="nav-link text-white py-1 ps-0" href="contato.html"> Fale Conosco </a>
+                <a class="nav-link text-white py-1 ps-0" href="trabalhe_conosco-bs.html"> Trabalhe conosco </a>
+                <a class="nav-link text-white py-1 ps-0" href="meu_perfil.html"> Meu Perfil </a>
+                <a class="nav-link text-white py-1 ps-0" href="blog.html"> Blog </a>
+              </nav>
+            </div>
+
+            <div class="col-md-3">
+              <p class="fw-bold">Contatos:</p>
+
+              <a class="nav-link text-white py-1 ps-0" href="tel:24988317476"> (24) 98831-7476 </a>
+              <a class="nav-link text-white py-1 ps-0" href="eipetricktw@gmail.com">
+                Eipetricktw@gmail.com
+              </a>
+              <a class="nav-link text-white py-1 ps-0" href="suporte.html"> Suporte </a>
+            </div>
+
+            <!-- Redes Sociais -->
+            <div class="col-md-7 text-end py-3">
+              <a
+                href="https://github.com/Eipetricktw"
+                target="_blank"
+                title="Acesse nosso GitHub"
+                class="btn btn-sm btn-outline-light"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                title="Acesse canal no Youtube"
+                class="btn btn-sm btn-outline-light"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                title="Acesse o nosso Instagram"
+                class="btn btn-sm btn-outline-light"
+              >
+                <i class="fa-brands fa-square-instagram"></i>
+              </a>
+
+              <a
+                href="https://br.linkedin.com/"
+                target="_blank"
+                title="Acesse o nosso Linkedin"
+                class="btn btn-sm btn-outline-light"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                title="Acesse o nosso Facebook"
+                class="btn btn-sm btn-outline-light"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="row g-2">
+            <!-- Idioma -->
+            <div class="col-md-2 col-6">
+              <select class="form-select" aria-label="Seleção de idioma">
+                <option selected>Idiomas</option>
+                <option value="1">Português (Brasil)</option>
+                <option value="2">Inglês</option>
+                <option value="3">Francês</option>
+              </select>
+            </div>
+
+            <!-- Moeda -->
+            <div class="col-md-2 col-6">
+              <select class="form-select" aria-label="Seleção de moeda">
+                <option selected>Moeda</option>
+                <option value="1">Real</option>
+                <option value="2">Dólar</option>
+                <option value="3">Euro</option>
+              </select>
+            </div>
+
+            <!-- Link Rápido / Seleção de Atalhos -->
+            <div class="col-md-8 col-12">
+              <select class="form-select" aria-label="Atalhos rápidos">
+                <option selected>Selecione um atalho...</option>
+                <option value="1">Opção 1</option>
+                <option value="2">Opção 2</option>
+                <option value="3">Opção 3</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </footer> 
     <!-- Final da Div Principal-->   
 
     <!-- Bootstrap JS e dependências -->

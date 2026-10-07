@@ -31,6 +31,10 @@
         border-style: solid;
         border-color: black;
       }
+
+      .card:hover {
+        border-color: black;
+      }
     </style>
   </head>
   <!-- Final do Head-->
@@ -99,61 +103,64 @@
     </header>
 
   <!-- Main da pagina -->
-<main class="bg-light py-4">
-  <div class="container">
-    <div class="row g-4"> <!-- "g-4" adiciona um espaçamento legal entre as colunas/cards -->
-      
-      <!-- Coluna 1 -->
-      <div class="col-md-4 col-sm-6">
-        <div class="card h-100">
-          <img
-            src="https://dummyimage.com/300x300/000/fff.png&text=Card+1"
-            class="card-img-top"
-            alt="Imagem de exemplo do card 1"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Título do Card 1</h5>
-            <p class="card-text">Descrição ou conteúdo resumido.</p>
-            <a href="#" class="btn btn-primary">Ação</a>
+      <main class="bg-light py-4">
+        <div class="container pb-4">
+          <div class="row g-4">
+            
+            <!-- Coluna 1 -->
+            <div class="col-md-4 col-sm-6">
+              <div class="card h-100 position-relative">
+                <img
+                  src="imgs/ps1.img.jpg"
+                  class="card-img-top object-fit-cover"
+                  style=""
+                  alt="Playstation 1"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Playstation 1</h5>
+                  <p class="card-text">Descrição ou conteúdo resumido.</p>
+                  <a href="#" class="stretched-link text-decoration-none mt-auto">Ver detalhes</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Coluna 2 -->
+            <div class="col-md-4 col-sm-6">
+              <div class="card h-100 position-relative">
+                <img
+                  src="imgs/ps2.img.jpg"
+                  class="card-img-top object-fit-cover"
+                  style=""
+                  alt="Playstation 2"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Playstation 2</h5>
+                  <p class="card-text text-muted mb-3">Sem descrição disponível.</p>
+                  <a href="#" class="stretched-link text-decoration-none mt-auto">Ver detalhes</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Coluna 3 -->
+            <div class="col-md-4 col-sm-6">
+              <div class="card h-100 position-relative">
+                <img
+                  src="imgs/wii.img.jpg"
+                  class="card-img-top object-fit-cover"
+                  style=""
+                  alt="Nintendo Wii"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Nintendo Wii</h5>
+                  <p class="card-text text-muted mb-3">Sem descrição disponível.</p>
+                  <a href="#" class="stretched-link text-decoration-none mt-auto">Ver detalhes</a>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
-      </div>
-
-      <!-- Coluna 2 -->
-      <div class="col-md-4 col-sm-6">
-        <div class="card h-100">
-          <img
-            src="https://dummyimage.com/300x300/000/fff.png&text=Card+2"
-            class="card-img-top"
-            alt="Imagem de exemplo do card 2"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Título do Card 2</h5>
-            <p class="card-text">Descrição ou conteúdo resumido.</p>
-            <a href="#" class="btn btn-primary">Ação</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Coluna 3 -->
-      <div class="col-md-4 col-sm-6">
-        <div class="card h-100">
-          <img
-            src="https://dummyimage.com/300x300/000/fff.png&text=Card+3"
-            class="card-img-top"
-            alt="Imagem de exemplo do card 3"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Título do Card 3</h5>
-            <p class="card-text">Descrição ou conteúdo resumido.</p>
-            <a href="#" class="btn btn-primary">Ação</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</main>
+      </main>
 
     <!--
         Footer da pagina 
@@ -162,13 +169,13 @@
         [-] Copyright do site
         [-] Redes Sociais
     -->
-    <footer class="bg-dark text-light">
+    <footer class="bg-dark text-light mt-auto">
       <div class="container py-4">
         <div class="row">
           <div class="col-md-2">
             <p class="fw-bold">Links Rápidos:</p>
 
-            <nav class="nav flex-column">
+            <nav class="nav flex-column align-items-start">
               <a class="nav-link text-white py-1 ps-0" href="sobre.html"> Quem somos </a>
               <a class="nav-link text-white py-1 ps-0" href="contato.html"> Fale Conosco </a>
               <a class="nav-link text-white py-1 ps-0" href="trabalhe_conosco-bs.html"> Trabalhe conosco </a>
