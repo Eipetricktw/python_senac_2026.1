@@ -29,6 +29,10 @@
       .adicionar_borda {
         border-width: 1px;
         border-style: solid;
+        border-color: rgb(0, 0, 0);
+      }
+
+        .card:hover {
         border-color: black;
       }
     </style>
@@ -69,11 +73,11 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="promocoes.html"> Promoções </a>
+                <a class="nav-link active" href="promocoes.html"> Promoções </a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link active" href="sobre.html"> Sobre </a>
+                <a class="nav-link" href="sobre.html"> Sobre </a>
               </li>
             </ul>
 
@@ -99,32 +103,70 @@
     </header>
 
     <!-- Main da pagina -->
-    <main class="bg-light py-4 flex-fill">
-      <div class="container">
-        <div class="row g-4"> 
-          
-          <!-- Coluna 1 -->
-          <div class="col-md-4 col-sm-6">
-            <div class="">
-             <h1>Sobre Nós</h1>
+        <main class="bg-light py-4">
+        <div class="container pb-4">
+          <div class="row g-4">
+            
+            <!-- Coluna 1 -->
+            <div class="col-md-4 col-sm-6">
+              <div class="card h-100 position-relative">
+                <img
+                  src="imgs/ps4control.img.jpg"
+                  class="card-img-top object-fit-cover"
+                  style=""
+                  alt="Controle Playstation 4"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Controle Playstation 4</h5>
+                  <p class="mb-0 fs-5 text-danger">R$ 249.99 </p>
+                  <p class="m-0 me-3 text-muted small">R$ 399.99 Preço Original </p>
+                  <p class="mb-0 text-danger small">-37,5%</p>
+                  <a href="#" class="stretched-link text-decoration-none mt-auto"></a>
+                </div>
+              </div>
             </div>
-          </div>
 
-           <!-- Coluna 1 -->
-          <div class="col-md-8 col-sm-6">
-            <div class="">
-             <p class="mt-5">Somos impulsionados por ideias que transformam a rotina e facilitam a vida das pessoas. <br>
-              A [Nome da Sua Empresa] nasceu da união de mentes criativas e focadas em tecnologia, com a meta clara de simplificar processos e entregar resultados extraordinários. <br>
-              Vivemos em constante evolução. Para nós, cada projeto é uma oportunidade única de ir além do comum, unindo design, funcionalidade e estratégia. <br>
-              Não oferecemos apenas produtos ou serviços: construímos parcerias de longo prazo, caminhando lado a lado com quem confia no nosso trabalho.
-              Acreditamos no poder da colaboração, da agilidade e de um atendimento humanizado. <br> 
-              O seu sucesso é o combustivel que nos faz ir mais longe todos os dias.</p>
+            <!-- Coluna 2 -->
+            <div class="col-md-4 col-sm-6">
+              <div class="card h-100 position-relative">
+                <img
+                  src="imgs/xboxcontrol.img.jpg"
+                  class="card-img-top object-fit-cover"
+                  style=""
+                  alt="Controle Xbox One"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Controle Xbox One</h5>
+                  <p class="mb-0 fs-5 text-danger">R$ 249.99 </p>
+                  <p class="m-0 me-3 text-muted small">R$ 399.99 Preço Original </p>
+                  <p class="mb-0 text-danger small">-37,5%</p>
+                  <a href="#" class="stretched-link text-decoration-none mt-auto"></a>
+                </div>
+              </div>
             </div>
-          </div>
 
+            <!-- Coluna 3 -->
+            <div class="col-md-4 col-sm-6">
+              <div class="card h-100 position-relative">
+                <img
+                  src="imgs/ps5control.img.jpg"
+                  class="card-img-top object-fit-cover"
+                  style=""
+                  alt="Controle Playstation 5"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Controle Playstation 5</h5>
+                    <p class="mb-0 fs-5 text-danger">R$ 249.99 </p>
+                    <p class="m-0 me-3 text-muted small">R$ 399.99 Preço Original </p>
+                    <p class="mb-0 text-danger small">-37,5%</p>
+                  <a href="#" class="stretched-link text-decoration-none mt-auto"></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
 
     <!--
         Footer da pagina 
