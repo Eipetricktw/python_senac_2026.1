@@ -19,11 +19,9 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
-app_name = "loops"
-
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('loops/', include('apps.loops_app.urls')),
+    path('loop/', include('apps.loops_app.urls')), #Aula 03
 ]
 
 if settings.DEBUG:

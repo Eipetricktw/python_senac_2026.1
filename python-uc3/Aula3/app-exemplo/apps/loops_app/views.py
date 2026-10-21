@@ -32,6 +32,7 @@ def pagina_for(request):
     return render(request, 'loops_app/exemplo_for.html', contexto)
 
 def jogo_adivinhacao(request):
+    
     # Inicializa o segredo e contador na sessão do navegador
     if 'numero_secreto' not in request.session:
         request.session['numero_secreto'] = random.randint(1, 10)
@@ -57,3 +58,97 @@ def jogo_adivinhacao(request):
             del request.session['tentativas']
 
     return render(request, 'loops_app/jogo.html', {'mensagem': mensagem, 'acertou': acertou})
+
+
+def amortizacao_divida(request):
+    tabela = []
+    saldo = 0
+    
+    saldo = float(request.POST.get('valor_total', 0))
+    parcela_mensal = float(request.POST.get('parcela', 0))
+    mes = 1
+
+    # O laço while continua até a dívida ser quitada
+    while saldo > 0:
+        if saldo < parcela_mensal:
+            pago = saldo
+            saldo = 0
+        else:
+            pago = parcela_mensal
+            saldo -= parcela_mensal
+
+        tabela.append({
+            'mes': mes,
+            'pago': round(pago, 2),
+            'saldo_restante': round(saldo, 2)
+        })
+        mes += 1
+
+    return render(request, 'loops_app/amortizacao.html', {'tabela': tabela})
+
+
+def fatores_primos(request):
+    fatores = []
+    numero_original = None
+
+    if request.method == "POST":
+        numero = int(request.POST.get('numero', 1))
+        numero_original = numero
+        divisor = 2
+
+        # Reduz o número dividindo pelos fatores primos possíveis
+        while numero > 1:
+            if numero % divisor == 0:
+                fatores.append(divisor)
+                numero //= divisor
+            else:
+                divisor += 1
+
+    contexto = {
+        'numero': numero_original,
+        'fatores': fatores
+    }
+
+    return render(request, 'loops_app/fatores.html', contexto)
+
+
+
+def consolidacao_pedidos(request):
+    # Lista de pedidos
+    pedidos = [
+        {"produto": "Laptop", "preco": 3000, "quantidade": 1},
+        {"produto": "Mouse", "preco": 50, "quantidade": 2},
+        {"produto": "Teclado", "preco": 150, "quantidade": 1},
+        {"produto": "Laptop", "preco": 3000, "quantidade": 1},
+        {"produto": "Pendrive 128Gb SanDisk", "preco": 105, "quantidade": 5},
+    ]
+    
+    # Cálculo do valor total
+    valor_total = 0
+
+    for p in pedidos:
+        subtotal = p["preco"] * p["quantidade"]
+        p["total"]=subtotal
+        valor_total = valor_total + subtotal
+    
+    # Contagem de itens únicos
+    #produtos_unicos = set(p["produto"] for p in pedidos)
+
+    produtos_unicos = []
+    for p in pedidos:
+        produto = p["produto"]
+        if produto not in produtos_unicos:
+            produtos_unicos.append(produto)
+    
+    quantidade_unicos = len(produtos_unicos)    
+    
+    # Contexto para o template
+    context = {
+        'pedidos': pedidos,
+        'valor_total': valor_total,
+        'quantidade_unicos': quantidade_unicos,
+        'produtos_unicos': list(produtos_unicos)
+    }
+    
+    return render(request, 'loops_app/pedidos.html', context)
+    #return render(request, 'loops_app/pedidos_template.html', context)
