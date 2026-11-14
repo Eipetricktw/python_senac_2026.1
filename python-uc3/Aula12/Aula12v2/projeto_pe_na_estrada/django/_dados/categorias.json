@@ -1,0 +1,83 @@
+
+[
+    {
+        "nome": "Esportivo",
+        "descricao": "Produtos desenvolvidos para atividades físicas, práticas esportivas e exercícios."
+    },
+    {
+        "nome": "Casual",
+        "descricao": "Produtos para uso cotidiano, com foco em conforto e praticidade."
+    },
+    {
+        "nome": "Social",
+        "descricao": "Produtos destinados a ocasiões formais, eventos e ambientes profissionais."
+    },
+    {
+        "nome": "Executivo",
+        "descricao": "Produtos voltados ao ambiente corporativo e profissional."
+    },
+    {
+        "nome": "Praia",
+        "descricao": "Produtos indicados para praia, piscina e atividades ao ar livre."
+    },
+    {
+        "nome": "Fitness",
+        "descricao": "Produtos destinados a academias, musculação e treinamento físico."
+    },
+    {
+        "nome": "Infantil",
+        "descricao": "Produtos desenvolvidos para crianças, considerando conforto e praticidade."
+    },
+    {
+        "nome": "Masculino",
+        "descricao": "Produtos destinados ao público masculino."
+    },
+    {
+        "nome": "Feminino",
+        "descricao": "Produtos destinados ao público feminino."
+    },
+    {
+        "nome": "Unissex",
+        "descricao": "Produtos desenvolvidos para utilização por diferentes públicos."
+    },
+    {
+        "nome": "Inverno",
+        "descricao": "Produtos destinados a temperaturas baixas e dias frios."
+    },
+    {
+        "nome": "Verão",
+        "descricao": "Produtos indicados para temperaturas elevadas e dias quentes."
+    },
+    {
+        "nome": "Acessórios",
+        "descricao": "Produtos complementares que agregam funcionalidade e estilo."
+    },
+    {
+        "nome": "Calçados",
+        "descricao": "Produtos destinados à proteção e ao conforto dos pés."
+    },
+    {
+        "nome": "Bolsas e Mochilas",
+        "descricao": "Produtos destinados ao transporte e armazenamento de objetos pessoais."
+    },
+    {
+        "nome": "Tecnologia",
+        "descricao": "Produtos tecnológicos e eletrônicos para diferentes finalidades."
+    },
+    {
+        "nome": "Casa",
+        "descricao": "Produtos destinados ao ambiente doméstico e à organização residencial."
+    },
+    {
+        "nome": "Trabalho",
+        "descricao": "Produtos utilizados em atividades profissionais e ambientes de trabalho."
+    },
+    {
+        "nome": "Lazer",
+        "descricao": "Produtos destinados a atividades recreativas e momentos de diversão."
+    },
+    {
+        "nome": "Viagem",
+        "descricao": "Produtos destinados a viagens, passeios e deslocamentos."
+    }
+]
